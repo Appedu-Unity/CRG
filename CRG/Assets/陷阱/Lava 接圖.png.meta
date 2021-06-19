@@ -1,7 +1,40 @@
 fileFormatVersion: 2
 guid: 733a552afc56ddb43ba59361d21e6272
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8916192005894530902
+    second: "Lava \u63A5\u5716_0"
+  - first:
+      213: -1065021281485695513
+    second: "Lava \u63A5\u5716_1"
+  - first:
+      213: -641684173886528654
+    second: "Lava \u63A5\u5716_2"
+  - first:
+      213: 973055856834567430
+    second: "Lava \u63A5\u5716_3"
+  - first:
+      213: 600204689577367392
+    second: "Lava \u63A5\u5716_4"
+  - first:
+      213: -7861772136153644994
+    second: "Lava \u63A5\u5716_5"
+  - first:
+      213: 3429475445965001847
+    second: "Lava \u63A5\u5716_6"
+  - first:
+      213: -159165233697295491
+    second: "Lava \u63A5\u5716_7"
+  - first:
+      213: 8488034374372756191
+    second: "Lava \u63A5\u5716_8"
+  - first:
+      213: -2719004367360120762
+    second: "Lava \u63A5\u5716_9"
+  - first:
+      213: 1638330627655614047
+    second: "Lava \u63A5\u5716_10"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -20,7 +53,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
@@ -32,7 +65,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -100
     wrapU: 1
     wrapV: 1
@@ -40,17 +73,17 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -71,10 +104,370 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
+    sprites:
+    - serializedVersion: 2
+      name: "Lava \u63A5\u5716_0"
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 108
+        width: 180
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa89a735c92534480800000000000000
+      internalID: -8916192005894530902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lava \u63A5\u5716_1"
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 108
+        width: 192
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e550d689c84831f0800000000000000
+      internalID: -1065021281485695513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lava \u63A5\u5716_2"
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 108
+        width: 196
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273e085c4a74817f0800000000000000
+      internalID: -641684173886528654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lava \u63A5\u5716_3"
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 108
+        width: 195
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ddc35752df08d00800000000000000
+      internalID: 973055856834567430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lava \u63A5\u5716_4"
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 108
+        width: 224
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06758c23cfa545800800000000000000
+      internalID: 600204689577367392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lava \u63A5\u5716_5"
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 108
+        width: 238
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e308f7745ef55e290800000000000000
+      internalID: -7861772136153644994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lava \u63A5\u5716_6"
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 108
+        width: 238
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7741baa7fb1f79f20800000000000000
+      internalID: 3429475445965001847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lava \u63A5\u5716_7"
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 108
+        width: 221
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7371e030188acdf0800000000000000
+      internalID: -159165233697295491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lava \u63A5\u5716_8"
+      rect:
+        serializedVersion: 2
+        x: 3097
+        y: 108
+        width: 197
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda0bcdba4e8bc570800000000000000
+      internalID: 8488034374372756191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lava \u63A5\u5716_9"
+      rect:
+        serializedVersion: 2
+        x: 3413
+        y: 108
+        width: 193
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648a3cc0fe7244ad0800000000000000
+      internalID: -2719004367360120762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lava \u63A5\u5716_10"
+      rect:
+        serializedVersion: 2
+        x: 3743
+        y: 108
+        width: 180
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e3e0e86058cb610800000000000000
+      internalID: 1638330627655614047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -1785.1561, y: -203.12498}
+      - {x: -1833.9843, y: -203.12498}
+      - {x: -1882.8124, y: -251.95311}
+      - {x: -1882.8124, y: -392.5781}
+      - {x: -1863.2811, y: -394.53122}
+      - {x: -1703.1249, y: -394.53122}
+      - {x: -1697.2655, y: -382.81247}
+      - {x: -1697.2655, y: -287.10938}
+      - {x: -1720.703, y: -228.51561}
+    - - {x: -1408.203, y: 1.9531249}
+      - {x: -1468.7499, y: 1.9531249}
+      - {x: -1544.9218, y: -68.359375}
+      - {x: -1544.9218, y: -308.59375}
+      - {x: -1531.2499, y: -394.53122}
+      - {x: -1345.703, y: -394.53122}
+      - {x: -1345.703, y: -70.3125}
+      - {x: -1351.5624, y: -60.54687}
+    - - {x: -1130.8594, y: 279.29688}
+      - {x: -1187.5, y: 214.84373}
+      - {x: -1187.5, y: -160.15625}
+      - {x: -1169.9219, y: -394.53122}
+      - {x: -986.32806, y: -394.53122}
+      - {x: -986.32806, y: 212.89061}
+      - {x: -1021.4843, y: 279.29688}
+    - - {x: -798.82806, y: 298.82812}
+      - {x: -798.82806, y: -337.8906}
+      - {x: -771.4843, y: -394.53122}
+      - {x: -609.375, y: -394.53122}
+      - {x: -597.65625, y: -306.64062}
+      - {x: -597.65625, y: 253.90623}
+      - {x: -626.9531, y: 298.82812}
+    - - {x: -197.26561, y: 296.875}
+      - {x: -386.71872, y: 296.875}
+      - {x: -412.10934, y: 263.67188}
+      - {x: -412.10934, y: -117.18749}
+      - {x: -388.67184, y: -357.42184}
+      - {x: -365.23434, y: -394.53122}
+      - {x: -203.12498, y: -394.53122}
+      - {x: -195.31248, y: -355.46872}
+      - {x: -181.64061, y: -259.76562}
+      - {x: -181.64061, y: 269.53125}
+    - - {x: -48.82812, y: 296.875}
+      - {x: -66.40625, y: 287.10938}
+      - {x: -72.265625, y: 273.4375}
+      - {x: -72.265625, y: 19.53125}
+      - {x: -23.437498, y: -394.53122}
+      - {x: 148.4375, y: -394.53122}
+      - {x: 171.87498, y: -376.9531}
+      - {x: 171.87498, y: 296.875}
+    - - {x: 355.46872, y: 291.01562}
+      - {x: 322.2656, y: 279.29688}
+      - {x: 322.2656, y: -144.53125}
+      - {x: 365.23434, y: -394.53122}
+      - {x: 566.40625, y: -394.53122}
+      - {x: 566.40625, y: 291.01562}
+    - - {x: 771.4843, y: 259.76562}
+      - {x: 701.1718, y: 226.56248}
+      - {x: 701.1718, y: -119.14062}
+      - {x: 730.4687, y: -394.53122}
+      - {x: 914.06244, y: -394.53122}
+      - {x: 927.7343, y: -369.1406}
+      - {x: 927.7343, y: 201.17186}
+      - {x: 896.4843, y: 259.76562}
+    - - {x: 1136.7188, y: 279.29688}
+      - {x: 1093.75, y: 230.46873}
+      - {x: 1093.75, y: -271.48438}
+      - {x: 1105.4688, y: -394.53122}
+      - {x: 1283.2031, y: -394.53122}
+      - {x: 1296.8749, y: -351.56247}
+      - {x: 1296.8749, y: 265.625}
+      - {x: 1265.625, y: 279.29688}
+    - - {x: 1482.4218, y: 1.9531249}
+      - {x: 1410.1561, y: -23.437498}
+      - {x: 1410.1561, y: -357.42184}
+      - {x: 1421.8749, y: -394.53122}
+      - {x: 1609.3749, y: -394.53122}
+      - {x: 1609.3749, y: -44.92187}
+      - {x: 1564.453, y: 1.9531249}
+    - - {x: 1808.5936, y: -203.12498}
+      - {x: 1740.2343, y: -263.67188}
+      - {x: 1740.2343, y: -392.5781}
+      - {x: 1757.8124, y: -394.53122}
+      - {x: 1921.8749, y: -394.53122}
+      - {x: 1925.7811, y: -374.99997}
+      - {x: 1925.7811, y: -257.8125}
+      - {x: 1853.5155, y: -203.12498}
+    - - {x: 738.2812, y: 160.15625}
+      - {x: 742.18744, y: 164.06248}
+      - {x: 740.2343, y: 167.96873}
+      - {x: 738.2812, y: 166.01561}
+      - {x: 744.14056, y: 160.15625}
+      - {x: 744.14056, y: 158.20312}
+      - {x: 742.18744, y: 160.15625}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000

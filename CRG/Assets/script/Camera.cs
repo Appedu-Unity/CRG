@@ -4,9 +4,24 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
-    public Transform player;
+    [Header("移動速度")]
+    public float cspeed = 10;
+
+    private Rigidbody2D rig;
+
+    private void Awake()
+    {
+        rig = GetComponent<Rigidbody2D>();
+    }
     private void Update()
     {
-        transform.position = new Vector3(player.position.x, 0,-10);
+        Run();
     }
+    private void Run()
+    {
+        rig.velocity = new Vector2(cspeed, 0); //水平加速度  
+
+    }
+
+
 }
