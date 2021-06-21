@@ -6,15 +6,18 @@ public class playermovement : MonoBehaviour
 
 {
     [Header("跳躍聲音")]
-    public AudioSource jumpaud;
+    public AudioClip jumpaud;
     [Header("死亡聲音")]
-    public AudioSource deadaud;
-    [Header("分數")]
-    public int score;
+    public AudioClip deadaud;
+    [Header("遊戲結束")]
+    public GameObject gg;           //遊戲結束
+    [Header("攝影機")]
+    public GameObject cm;
     public float speed,jumpForce;   //移動及跳躍參數
     public Transform groundChenck;  //偵測物
     public LayerMask ground;        //偵測物
     public bool isGround, isJump;   //狀態判斷
+    
 
     private Rigidbody2D rig;
     private Collider2D coll;
@@ -27,6 +30,7 @@ public class playermovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rig = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
@@ -104,6 +108,23 @@ public class playermovement : MonoBehaviour
         {
             anim.SetBool("jump", false);
             anim.SetBool("fall", true);
+        }
+    }
+    private void GameOver()
+    {
+        gg.SetActive(true);
+        anim.SetBool("death", true);
+
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.name == "Trap")
+        {
+            //aud.PlayOneShot(deadaud);
+            GameObject.Find("Canvas").GetComponent<Score>().enabled = false;
+            anim.SetBool("death", true);
+            Invoke("GameOver", 0.5f);
+            
         }
     }
     /// <summary>
