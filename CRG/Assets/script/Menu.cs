@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public GameObject PassMenu;
-    public Button button;
+    //public Button button;
 
 
     //void Update()
@@ -36,7 +36,9 @@ public class Menu : MonoBehaviour
     {
        PassMenu.SetActive(true);
        Time.timeScale = 0f;
+
     }
+    
 
     //繼續遊戲
     public void StartGame()
@@ -44,12 +46,7 @@ public class Menu : MonoBehaviour
         PassMenu.SetActive(false);
         Time.timeScale = 1f;
     }
-    //設置
-    public void MuseGame()
-    {
-
-
-    }
+    
    
 
 

@@ -23,8 +23,17 @@ public class Score : MonoBehaviour
 
     public void AddScore(float add)
     {
-        score += add;
+        if (Time.timeScale==0)
+        {
+            return;
+        }
+        else 
+        {
+            score += add;
+        }     
         text.text = "分數 : " + score;
+        
+       
     }
     public void ClickButton()
     {
