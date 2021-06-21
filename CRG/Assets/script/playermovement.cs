@@ -113,7 +113,8 @@ public class playermovement : MonoBehaviour
     private void GameOver()
     {
         gg.SetActive(true);
-        
+        anim.SetBool("death", true);
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -121,6 +122,7 @@ public class playermovement : MonoBehaviour
         {
             //aud.PlayOneShot(deadaud);
             GameObject.Find("Canvas").GetComponent<Score>().enabled = false;
+            anim.SetBool("death", true);
             Invoke("GameOver", 0.5f);
             
         }

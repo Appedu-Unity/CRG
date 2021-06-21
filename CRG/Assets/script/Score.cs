@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Score : MonoBehaviour
 {
     [Header("分數")]
@@ -24,5 +25,9 @@ public class Score : MonoBehaviour
     {
         score += add;
         text.text = "分數 : " + score;
+    }
+    public void ClickButton()
+    {
+        GameManager._instance.transformGame();
     }
 }
