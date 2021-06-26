@@ -21994,7 +21994,7 @@ GameObject:
   - component: {fileID: 1502231612}
   - component: {fileID: 1502231611}
   - component: {fileID: 1502231610}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "\u6D6E\u7A7A\u5730\u677F"
   m_TagString: floor
   m_Icon: {fileID: 0}
@@ -22240,7 +22240,7 @@ GameObject:
   - component: {fileID: 1831143992}
   - component: {fileID: 1831143991}
   - component: {fileID: 1831143990}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "\u6D6E\u7A7A\u5730\u677F (2)"
   m_TagString: floor
   m_Icon: {fileID: 0}
@@ -22757,12 +22757,12 @@ PrefabInstance:
     - target: {fileID: 1829372188537805395, guid: 13be60400df7076439e8a149e79baa19,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -58.95
+      value: -53.57
       objectReference: {fileID: 0}
     - target: {fileID: 1829372188537805395, guid: 13be60400df7076439e8a149e79baa19,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.87
+      value: -4.69
       objectReference: {fileID: 0}
     - target: {fileID: 1829372188537805395, guid: 13be60400df7076439e8a149e79baa19,
         type: 3}

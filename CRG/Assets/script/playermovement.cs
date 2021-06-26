@@ -46,7 +46,7 @@ public class playermovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        isGround = Physics2D.OverlapCircle(groundChenck.position, 0.1f, ground);    //在地面上
+        isGround = Physics2D.OverlapCircle(groundChenck.position, 0.5f, ground);    //在地面上
 
         GroundMovement();
         SwitchAnim();
@@ -133,8 +133,10 @@ public class playermovement : MonoBehaviour
     /// <param name="collision"></param>
     private void OnCollisionExit2D(Collision2D collision)   
     {
-        if (collision.gameObject.tag == "floor")    //完加觸碰到的圖層為floor
+        if (collision.gameObject.tag == "floor" )    //完加觸碰到的圖層為floor
         {
+            rig.velocity = new Vector2(rig.velocity.x, jumpForce);
+            isGround = true;
             Destroy(collision.gameObject, 0.5f);    //消除所碰到之物件.5秒鐘刪除
         }
     }
