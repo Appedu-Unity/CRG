@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 /// <summary>
 /// 枚舉(遊戲進行狀態)
 /// </summary>
-public enum Gamestate { 
+public enum Gamestate
+{ 
     running,stop
 }
 /// <summary>
@@ -32,7 +33,8 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// 重製場景
     /// </summary>
-    public void Replay(){
+    public void Replay()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     /// <summary>

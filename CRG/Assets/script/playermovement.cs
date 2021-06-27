@@ -41,7 +41,10 @@ public class playermovement : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && jumpCount > 0)
         {
+            //跳躍音效
+            SoundManager.Instance.PlayJump();
             jumpPressed = true;
+            
         }
     }
     private void FixedUpdate()
@@ -72,6 +75,7 @@ public class playermovement : MonoBehaviour
     {
         if (isGround)   //如果在地面
         {
+            
             jumpCount = 2;  //可連跳躍次數
             isJump = false; //跳躍動畫 = false
         }
@@ -112,6 +116,8 @@ public class playermovement : MonoBehaviour
     }
     private void GameOver()
     {
+        //死亡音效
+        SoundManager.Instance.PlayDie();
         gg.SetActive(true);
         anim.SetBool("death", true);
 
@@ -120,6 +126,7 @@ public class playermovement : MonoBehaviour
     {
         if(collision.name == "Trap")
         {
+         
             //aud.PlayOneShot(deadaud);
             GameObject.Find("Canvas").GetComponent<Score>().enabled = false;
             anim.SetBool("death", true);
