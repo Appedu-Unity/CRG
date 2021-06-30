@@ -21,7 +21,7 @@ public class Menu : MonoBehaviour
     //開始遊戲
     public void PlayGame()
     {
-       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     //離開遊戲
@@ -46,8 +46,22 @@ public class Menu : MonoBehaviour
         PassMenu.SetActive(false);
         Time.timeScale = 1f;
     }
-    
-   
+
+    /// <summary>
+    /// 開發者名單
+    /// </summary>
+    public void Developer()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    /// <summary>
+    /// 返回主頁
+    /// </summary>
+    public void Back()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
 
 
 
