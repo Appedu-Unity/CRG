@@ -36,10 +36,8 @@ public class Menu : MonoBehaviour
     {
        PassMenu.SetActive(true);
        Time.timeScale = 0f;
-
     }
     
-
     //繼續遊戲
     public void StartGame()
     {
@@ -54,22 +52,13 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
     /// <summary>
     /// 返回主頁
     /// </summary>
     public void Back()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        Time.timeScale = 1;
     }
-
-
-
-
-
-
-
-
-
-
-
 }
