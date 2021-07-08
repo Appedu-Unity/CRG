@@ -10,7 +10,7 @@ public class playermovement : MonoBehaviour
     [Header("死亡聲音")]
     public AudioClip deadaud;
     [Header("遊戲結束")]
-    public GameObject gg;           //遊戲結束
+    public GameObject gg;   //遊戲結束
     [Header("攝影機")]
     public GameObject cm;
     public float speed;   //移動及跳躍參數
@@ -26,6 +26,8 @@ public class playermovement : MonoBehaviour
     private AudioSource aud;
     private bool jumpPressed;
     private int jumpCount;
+    private GameObject player;
+
 
 
     // Start is called before the first frame update
@@ -45,8 +47,8 @@ public class playermovement : MonoBehaviour
             //跳躍音效
             SoundManager.Instance.PlayJump();
             jumpPressed = true;
-            
         }
+       
     }
     private void FixedUpdate()
     {
@@ -66,8 +68,9 @@ public class playermovement : MonoBehaviour
 
         if (horizontalMove != 0)    //如果水平移動不等於0
         {
-            transform.localScale = new  Vector3(horizontalMove, 1, 1);  //判斷方向面向
+            transform.localScale = new Vector3(horizontalMove, 1, 1);  //判斷方向面向
         }
+        
     }
     /// <summary>
     /// 跳躍及判斷
@@ -117,12 +120,25 @@ public class playermovement : MonoBehaviour
     }
     private void GameOver()
     {
+        enabled = false;
         //死亡音效
         SoundManager.Instance.PlayDie();
         gg.SetActive(true);
         anim.SetBool("death", true);
-
+        GetComponent<CapsuleCollider2D>().enabled = false;
+        rig.Sleep();
+        if (gg == true)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
     }
+
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.name == "Trap")

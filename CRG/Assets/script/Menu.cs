@@ -7,16 +7,11 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public GameObject PassMenu;
-    //public Button button;
+    public GameObject gg;   //遊戲結束
+    private Rigidbody2D rig;
+    private Animator anim;
+    private GameObject player;
 
-
-    //void Update()
-    //{
-    //    if (Input.GetMouseButton(0))
-    //    {
-    //        Application.Quit();
-    //    }
-    //}
 
     //開始遊戲
     public void PlayGame()
@@ -45,6 +40,9 @@ public class Menu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+
+
+
     /// <summary>
     /// 開發者名單
     /// </summary>
@@ -66,4 +64,10 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
         Time.timeScale = 1;
     }
+
+    
+
+
+
+
 }
