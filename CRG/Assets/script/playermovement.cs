@@ -13,7 +13,8 @@ public class playermovement : MonoBehaviour
     public GameObject gg;           //遊戲結束
     [Header("攝影機")]
     public GameObject cm;
-    public float speed,jumpForce;   //移動及跳躍參數
+    public float speed;   //移動及跳躍參數
+    public float jumpthrust;
     public Transform groundChenck;  //偵測物
     public LayerMask ground;        //偵測物
     public bool isGround, isJump;   //狀態判斷
@@ -82,13 +83,13 @@ public class playermovement : MonoBehaviour
         if (jumpPressed && isGround)    //如果按下跳躍鍵且在地面上
         {
             isJump = true;  //跳躍動畫 = true
-            rig.velocity = new Vector2(rig.velocity.x, jumpForce);  //跳躍參數
+            rig.velocity = new Vector2(rig.velocity.x, jumpthrust);  //跳躍參數
             jumpCount--;    //跳躍次數-1
             jumpPressed = false;    //確保if迴圈執行完
         }
         else if (jumpPressed && jumpCount > 0 && isJump )   //如果按下跳躍鍵&&跳躍次數大於0&&跳躍動畫執行
         {
-            rig.velocity = new Vector2(rig.velocity.x, jumpForce);  //跳躍參數
+            rig.velocity = new Vector2(rig.velocity.x, jumpthrust);  //跳躍參數
             jumpCount--;    //跳躍次數-1
             jumpPressed = false;    //確保完成else if迴圈
         }
@@ -142,7 +143,7 @@ public class playermovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "floor" )    //完加觸碰到的圖層為floor
         {
-            rig.velocity = new Vector2(rig.velocity.x, jumpForce);
+            rig.velocity = new Vector2(rig.velocity.x, jumpthrust);
             isGround = true;
             Destroy(collision.gameObject, 0.5f);    //消除所碰到之物件.5秒鐘刪除
         }
