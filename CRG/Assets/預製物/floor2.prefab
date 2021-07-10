@@ -5245,7 +5245,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 32, y: -18, z: 0}
+  - first: {x: 31, y: -18, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 121
@@ -5255,7 +5255,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 34, y: -18, z: 0}
+  - first: {x: 32, y: -18, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 120
