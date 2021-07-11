@@ -495,7 +495,7 @@ MonoBehaviour:
   deadaud: {fileID: 0}
   gg: {fileID: 246028066}
   cm: {fileID: 0}
-  speed: 9.5
+  speed: 9.8
   jumpthrust: 25
   groundChenck: {fileID: 1454569454}
   ground:
@@ -2664,7 +2664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aud: {fileID: 1080181361}
   aC:
-  - {fileID: 8300000, guid: 5f88e29a98492c74cb34b183deb15a9e, type: 3}
+  - {fileID: 8300000, guid: f2b4c966be852b9489969e820903b88a, type: 3}
   - {fileID: 8300000, guid: 6c15733f9d824ab46a065b6c6b477e13, type: 3}
 --- !u!82 &1080181361
 AudioSource:
@@ -75452,7 +75452,7 @@ PrefabInstance:
     - target: {fileID: 1829372188537805390, guid: 13be60400df7076439e8a149e79baa19,
         type: 3}
       propertyPath: m_GravityScale
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1829372188537805390, guid: 13be60400df7076439e8a149e79baa19,
         type: 3}
