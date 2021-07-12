@@ -17,7 +17,7 @@ public class playermovement : MonoBehaviour
     public float jumpthrust;
     public Transform groundChenck;  //偵測物
     public LayerMask ground;        //偵測物
-    public bool isGround, isJump;   //狀態判斷
+    public bool isGround, isJump;   //狀態判斷z
     
 
     private Rigidbody2D rig;

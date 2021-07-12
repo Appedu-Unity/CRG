@@ -22,6 +22,7 @@ public class SoundManager : MonoBehaviour
         {
             Instance = this;
         }
+
     }
 
     ////跑 音效
@@ -39,8 +40,9 @@ public class SoundManager : MonoBehaviour
     //死亡 音效
     public void PlayDie()
     {
-        aud.clip = aC[1];
-        aud.Play();
+        int number;
+        number = Random.Range(1, aC.Length);
+        aud.PlayOneShot(aC[number], 0.5f);
     }
    
 
