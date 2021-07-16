@@ -307,7 +307,7 @@ PrefabInstance:
     - target: {fileID: 3586018409828139992, guid: be6f83feeb52a8a4b9449851035c8e4b,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 8
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3586018409828139992, guid: be6f83feeb52a8a4b9449851035c8e4b,
         type: 3}
@@ -988,6 +988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PassMenu: {fileID: 767715107}
+  gg: {fileID: 0}
 --- !u!224 &1265659810 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7258795982012893578, guid: de74c02b6d1015b4eafbfb3f49f9cca8,
